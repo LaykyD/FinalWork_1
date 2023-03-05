@@ -6,7 +6,7 @@ string[] InputToStringArray(string str){
 }
 
 void PrintArray(string[] arr){
-    Console.Write($"Ваш массив, состоящий из {arr.Length} элементов: [");
+    Console.Write($"Массив, состоящий из {arr.Length} элементов: [");
 	for (int i = 0; i < arr.Length; i++){
         if (i == arr.Length -1)
         Console.Write($"{arr[i]}]");
@@ -41,6 +41,7 @@ Console.WriteLine("-------------------------------------------------------------
 Console.Write("Введите !!ЧЕРЕЗ ПРОБЕЛ!! слова для заполнения массива: ");
 string? str = Console.ReadLine();
 string[] array = InputToStringArray(str);
+Console.WriteLine("Исходный массив:");
 PrintArray(array);
 
 string[] finalarray = arrayToArrayOfElemLenght3(array);
